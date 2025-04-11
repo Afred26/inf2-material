@@ -25,3 +25,11 @@ if (names.size() != fees.size()) {
 
   return fees[pos];
 }
+
+
+int lookup_fee(string name, vector<PointOfInterest> pois){
+ for (PointOfInterest poi : pois) {
+  return poi.fee;
+ }
+
+}

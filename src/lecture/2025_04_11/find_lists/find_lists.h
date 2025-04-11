@@ -1,6 +1,7 @@
 #ifndef FIND_LISTS_H
 #define FIND_LISTS_H
 
+#include "poi.h"
 #include <vector>
 #include <string>
 
@@ -19,5 +20,8 @@ int find_element(std::vector<std::string> names, std::string name);
 /// Element aus fees. Liefert -1, falls kein Element in names gefunden wurde.
 int lookup_fee(std::string name, std::vector<std::string> names,
     std::vector<int> fees);
+
+
+int lookup_fee(std::string name, std::vector<PointOfInterest> pois);
 
 #endif
